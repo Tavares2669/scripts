@@ -53,3 +53,26 @@ async def automate_duckduckgo():
 
 # O motor de arranque
 asyncio.run(automate_duckduckgo())
+
+'''
+Apontar Localizadores
+page.locator(".classe" ou "#id") -> A forma tradicional. Procura pelo código HTML (igual ao BeautifulSoup).
+page.get_by_placeholder("texto") -> Procura pela marca de água dentro de uma caixa de texto.
+page.get_by_role("button", name="Submeter") -> Procura pela função do elemento (ex: botão, link, título).
+
+Agir Ações do Rato e Teclado
+await elemento.click() -> Clica com o rato.
+await elemento.fill("texto") -> Escreve texto dentro de uma caixa.
+await elemento.press("Enter") -> Carrega numa tecla específica do teclado.
+
+Extrair (Ler os dados)
+await elemento.inner_text() -> Puxa o texto limpo e visível no ecrã.
+await elemento.get_attribute("href") -> Puxa um link ou atributo escondido no HTML.
+
+1- Vai ao site.
+2- Aponta para a barra de pesquisa.
+3- Age: Escreve "Python" e carrega no Enter.
+4-(O cérebro espera que a página nova carregue.
+5- Aponta para o título principal da página.
+6- Extrai o texto desse título para a sua memória.
+'''
