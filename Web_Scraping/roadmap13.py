@@ -75,4 +75,5 @@ await elemento.get_attribute("href") -> Puxa um link ou atributo escondido no HT
 4-(O cérebro espera que a página nova carregue.
 5- Aponta para o título principal da página.
 6- Extrai o texto desse título para a sua memória.
+
 '''
