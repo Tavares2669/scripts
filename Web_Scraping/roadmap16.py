@@ -2,16 +2,20 @@ from playwright.async_api import async_playwright
 import asyncio
 
 async def extrair_dados_livro(page, threshold):
-    titulo = await page.locator("div > h1").inner_text()
-    preco = await page.locator(".price_color").first.inner_text()
-    preco_num = float(preco.replace("£",""))
-    
-    dados_livro = {
-        "title": titulo,
-        "price": preco_num,
-        "cheap": preco_num < threshold
-    }
-    return dados_livro
+    try:
+        titulo = await page.locator("div > h1").inner_text()
+        preco = await page.locator(".price_color").first.inner_text()
+        preco_num = float(preco.replace("£",""))
+        
+        dados_livro = {
+            "title": titulo,
+            "price": preco_num,
+            "cheap": preco_num < threshold
+        }
+        return dados_livro
+    except Exception as e:
+            print(f"Erro durante a extração: {e}")
+            return []
 async def main():
     async with async_playwright() as p:
         lista_livros = [
