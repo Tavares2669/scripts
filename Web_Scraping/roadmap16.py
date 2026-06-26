@@ -28,8 +28,7 @@ async def main():
         page = await browser.new_page()
         for url in lista_livros:
             await page.goto(url)
-            print("A extrair dados")
-
+            
             esta_barato = await extrair_dados_livro(page,threshold)
             if esta_barato["cheap"] == True:
                 print(f"Dentro da margem: Livro {esta_barato['title']}")
