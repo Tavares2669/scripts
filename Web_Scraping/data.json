@@ -1,10 +1,27 @@
 [
     {
-        "headline": "Robôs dominam o mundo",
-        "link": "site.com/1"
+        "id": 1,
+        "headline": "Tidal AI Policy",
+        "link": "https://tidal.com/ai-policy"
     },
     {
-        "headline": "Mas humanos aprendem Python",
-        "link": "site.com/2"
+        "id": 2,
+        "headline": "Sandia National Labs SA3000 8085 CPU",
+        "link": "https://www.cpushack.com/2026/06/03/sandia-national-labs-sa3000-8085-cpu/"
+    },
+    {
+        "id": 3,
+        "headline": "HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88",
+        "link": "https://danunparsed.com/p/hackerrank-open-source-ats"
+    },
+    {
+        "id": 4,
+        "headline": "Type-checked non-empty strings",
+        "link": "https://exploring-better-ways.bellroy.com/haskell-koan-type-checked-non-empty-strings.html"
+    },
+    {
+        "id": 5,
+        "headline": "Building Principia for Windows XP",
+        "link": "https://voxelmanip.se/2026/06/28/building-principia-for-windows-xp/"
     }
 ]
